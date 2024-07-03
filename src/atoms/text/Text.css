@@ -1,6 +1,7 @@
 .text {
   max-width: 55ch;
   text-wrap: balance;
+  line-height: 1.2;
 }
 .text-accent {
   color: var(--accent);
