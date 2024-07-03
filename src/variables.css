@@ -1,4 +1,8 @@
 :root {
+  --font-sans: font-family: ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
   --primary: hsl(229, 28%, 19%);
   --secondary: hsl(229, 28%, 17%);
   --accent: hsl(140, 48%, 79%);
@@ -10,4 +14,7 @@
   --fs-600: 2.2rem;
   --fs-700: 2.4rem;
   --fs-800: 3.2rem;
+  --fs-900: 4rem;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --border-radius: 4px;
 }
