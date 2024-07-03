@@ -1,0 +1,38 @@
+.icon_link {
+  display: block;
+  transition: var(--transition);
+}
+.icon_link__icon {
+  transition: var(--transition);
+}
+
+.icon_link--navbar {
+  border-radius: var(--border-radius);
+  height: var(--fs-900);
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: var(--secondary);
+  }
+  &:hover .icon_link__icon {
+    stroke: var(--text-light);
+  }
+}
+.icon_link__icon--navbar {
+  height: var(--fs-700);
+  stroke: var(--text-dark);
+}
+
+.icon_link--project {
+  padding: 1em;
+  &:hover .icon_link__icon {
+    stroke: var(--accent);
+    scale: 1.1;
+  }
+}
+.icon_link__icon--project {
+  height: var(--fs-600);
+  stroke: var(--text-light);
+}
