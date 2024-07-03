@@ -1,0 +1,16 @@
+.button {
+  font-size: var(--fs-300);
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  padding: 1.2em 2em;
+  transition: var(--transition);
+  letter-spacing: 0.1em;
+  &:hover {
+    outline: none;
+    box-shadow: 4px 4px 0 0 var(--accent);
+    translate: -5px -5px;
+  }
+}

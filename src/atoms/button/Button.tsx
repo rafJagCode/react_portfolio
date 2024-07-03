@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import { ReactNode } from 'react';
+import './Button.css';
 
-export default function Button() {
-  const [count, setCount] = useState(0);
+type ButtonProps = {
+  link: string;
+  children: ReactNode;
+};
 
-  const increment = () => setCount((state) => state + 1);
+const Button = ({ link, children }: ButtonProps) => {
   return (
-    <>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-    </>
+    <a href={link} className="button" target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
   );
-}
+};
+
+export default Button;
