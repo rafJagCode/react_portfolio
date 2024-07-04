@@ -1,10 +1,11 @@
 .button {
+  font-family: var(--font-mono);
   font-size: var(--fs-300);
+  font-weight: 500;
   color: var(--accent);
   background-color: transparent;
   border: 1px solid var(--accent);
   border-radius: var(--border-radius);
-  font-family: var(--font-mono);
   padding: 1.2em 2em;
   transition: var(--transition);
   letter-spacing: 0.1em;
