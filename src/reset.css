@@ -25,7 +25,8 @@ a {
   text-decoration: none;
 }
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 img,
