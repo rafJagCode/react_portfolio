@@ -6,6 +6,7 @@
   --primary: hsl(229, 28%, 19%);
   --secondary: hsl(229, 28%, 17%);
   --accent: hsl(140, 48%, 79%);
+  --accent-alpha: hsl(140, 48%, 20%, 0.8);
   --shadow: hsl(229, 28%, 10%, 0.7);
   --text-dark: hsl(227, 49%, 71%);
   --text-light: hsl(240, 100%, 90%);
