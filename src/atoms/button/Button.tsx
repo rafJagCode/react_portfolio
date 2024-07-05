@@ -8,6 +8,7 @@ type ButtonProps = {
 
 const Button = ({ link, children }: ButtonProps) => {
   return (
+    // TODO: Change focus styling
     <a href={link} className="button" target="_blank" rel="noopener noreferrer">
       {children}
     </a>
