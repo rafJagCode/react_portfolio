@@ -36,3 +36,9 @@
 .fw-900 {
   font-weight: 900;
 }
+.font-sans {
+  font-family: var(--font-sans);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
