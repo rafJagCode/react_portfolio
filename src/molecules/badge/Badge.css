@@ -1,0 +1,20 @@
+.badge {
+  border-radius: 30px;
+  border: 1px solid var(--text-light);
+  background: linear-gradient(
+    hsl(229, 28%, 60%, 0.2) 0%,
+    hsl(229, 28%, 5%, 0.1) 100%
+  );
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.badge__indicator {
+  height: 8px;
+  aspect-ratio: 1;
+  border: 1px solid hsl(121, 60%, 64%);
+  border-radius: 50%;
+  background-color: hsl(121, 87%, 30%);
+}
