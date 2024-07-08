@@ -1,23 +1,48 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Text from './Text';
+import FlexRow from './FlexRow';
 
 const meta = {
-  title: 'Atoms/Text',
-  component: Text,
+  title: 'Layouts/FlexRow',
+  component: FlexRow,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Text>;
+} satisfies Meta<typeof FlexRow>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Paragraph: Story = {
+const Child = ({ index }: { index: number }) => (
+  <div
+    style={{
+      width: '50px',
+      height: '50px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'var(--accent)',
+    }}
+  >
+    {index}
+  </div>
+);
+
+const FlexRowTemplate: StoryObj<
+  React.ComponentProps<typeof FlexRow> & { numberOfChildren: number }
+> = {
+  render: ({ numberOfChildren, ...args }) => (
+    <FlexRow {...args}>
+      {Array.from({ length: numberOfChildren }, (_, i) => (
+        <Child index={i + 1} />
+      ))}
+    </FlexRow>
+  ),
+};
+
+export const Default = {
+  ...FlexRowTemplate,
   args: {
-    Tag: 'p',
-    className: 'fs-400 text-dark',
-    children:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    Tag: 'div',
+    numberOfChildren: 3,
   },
 };
