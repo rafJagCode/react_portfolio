@@ -1,9 +1,10 @@
 import { ElementType, ReactNode } from 'react';
+import './FlexRow.css';
 
 type FlexRowProps = {
   Tag: ElementType;
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const FlexRow = ({ Tag, className, children }: FlexRowProps) => {
